@@ -1,19 +1,17 @@
 import React from "react";
 import MenuAppBar from "../Components/MenuAppBar";
+import SendButton from "../Components/SendButton";
+import FloatingActionButtons from "../Components/FloatingActionButtons";
+import BasicTextFields from "../Components/BasicTextFields";
 
 function TaskPage() {
   return (
     <div className="TaskPage">
       <MenuAppBar />
-      <label>
-        <ul>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </ul>
-      </label>
+      <BasicTextFields />
+      <SendButton />
+
+      <FloatingActionButtons />
     </div>
   );
 }
