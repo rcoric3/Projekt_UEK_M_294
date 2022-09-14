@@ -1,6 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import "../Templates/TaskPage.css";
 
 export default function BasicTextFields() {
   return (
@@ -12,10 +13,12 @@ export default function BasicTextFields() {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label="TITEL" variant="outlined" />
-      <TextField id="outlined-basic" label="TITEL" variant="outlined" />
-      <TextField id="outlined-basic" label="TITEL" variant="outlined" />
-      <TextField id="outlined-basic" label="TITEL" variant="outlined" />
+      <div className="BasicTextFields">
+        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
+        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
+        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
+        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
+      </div>
     </Box>
   );
 }
