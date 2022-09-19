@@ -21,11 +21,6 @@ function CreateComponent() {
 
     createPost();
   }, []);
-  return (
-    <ul>
-      <p></p>
-    </ul>
-  );
 }
 
 export default CreateComponent;

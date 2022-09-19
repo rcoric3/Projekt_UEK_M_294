@@ -20,11 +20,26 @@ function ShowTask() {
     <>
       <h2></h2>
 
-      <ul>
-        {post.map((item, i) => {
-          return <p key={i}>{item.title}</p>;
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Task</th>
+        </tr>
+      </thead>
+      <tbody>
+        {post.map((item) => {
+          return (
+            <tr>
+              <td>{item.title}</td>
+              <td>{item.completed ? "✅" : "❌"}</td>
+            </tr>
+          );
         })}
-      </ul>
+      </tbody>
+
+      {post.map((item, i) => {
+        return <p key={i}>{item.title}</p>;
+      })}
     </>
   );
 }

@@ -19,18 +19,6 @@ function DeleteTasks() {
   useEffect(() => {
     fetchPost();
   }, []);
-
-  return (
-    <>
-      <h2></h2>
-
-      <ul>
-        {post.map((item, i) => {
-          return <p key={i}>{item.title}</p>;
-        })}
-      </ul>
-    </>
-  );
 }
 
 export default DeleteTasks;
