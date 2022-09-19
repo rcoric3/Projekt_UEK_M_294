@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import "../Templates/TaskPage.css";
 
-export default function BasicTextFields() {
+export default function BasicTextFields({ onChange }) {
   return (
     <Box
       component="form"
@@ -14,7 +14,12 @@ export default function BasicTextFields() {
       autoComplete="off"
     >
       <div className="BasicTextFields">
-        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
+        <TextField
+          id="outlined-basic"
+          label="TITEL"
+          variant="outlined"
+          onChange={onChange}
+        />
       </div>
     </Box>
   );

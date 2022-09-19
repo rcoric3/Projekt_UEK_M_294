@@ -1,33 +1,36 @@
 import React, { useState, useEffect } from "react";
+import BasicTextFields from "./BasicTextFields";
+import SendButton from "./SendButton";
 
 function CreateComponent() {
   const API = "http://localhost:3000/tasks";
-  const [titles, setTitle] = useState("s767676sdfhkf");
-  useEffect(() => {
-    const createPost = () => {
-      let res = fetch(API, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          completed: true,
-          title: titles,
-        }),
-      });
-    };
+  const [title, setTitle] = useState("");
+  const handleChange = (e) => {
+    setTitle(e.target.value);
+  };
 
-    console.log("Hello World");
+  const handleClick = (e) => {
+    e.preventDefault();
+    fetch(API, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        completed: true,
+        title: title,
+      }),
+    });
+  };
 
-    createPost();
-  }, []);
+  useEffect(() => {}, []);
 
-  return(
+  return (
     <>
-    <div>
-    </div>
+      <BasicTextFields onChange={handleChange} />
+      <SendButton onClick={handleClick} />
     </>
-  )
+  );
 }
 
 export default CreateComponent;

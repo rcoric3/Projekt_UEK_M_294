@@ -1,4 +1,5 @@
 import React from "react";
+import BasicTextFields from "../Components/BasicTextFields";
 import CreateComponent from "../Components/CreateComponent";
 import DeleteTasks from "../Components/DeleteTasks";
 import FloatingActionButtons from "../Components/FloatingActionButtons";
@@ -10,7 +11,6 @@ export default function CreateTask() {
       <CreateComponent />
       <DeleteTasks />
       <FloatingActionButtons />
-      <SendButton />
     </div>
   );
 }

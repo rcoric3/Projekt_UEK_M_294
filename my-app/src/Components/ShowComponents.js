@@ -31,7 +31,7 @@ function ShowTask() {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell>ID</TableCell>
+                <TableCell>Aufgaben Nummer</TableCell>
                 <TableCell>Title</TableCell>
                 <TableCell>Completed</TableCell>
               </TableRow>
