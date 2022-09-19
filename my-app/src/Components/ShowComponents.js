@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import BasicTextFields from "../Components/BasicTextFields";
+import { ListItem, TableCell, Typography } from "@mui/material";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
 
 function ShowTask() {
   const [post, getPost] = useState([]);
@@ -18,28 +22,35 @@ function ShowTask() {
 
   return (
     <>
-      <h2></h2>
+      <div className="centerTable">
+        <div className="tableContainer">
+          <Typography className="showTaskTitle" variant="h5">
+            Your Tasks:
+          </Typography>
 
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Task</th>
-        </tr>
-      </thead>
-      <tbody>
-        {post.map((item) => {
-          return (
-            <tr>
-              <td>{item.title}</td>
-              <td>{item.completed ? "✅" : "❌"}</td>
-            </tr>
-          );
-        })}
-      </tbody>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>ID</TableCell>
+                <TableCell>Title</TableCell>
+                <TableCell>Completed</TableCell>
+              </TableRow>
+            </TableHead>
 
-      {post.map((item, i) => {
-        return <p key={i}>{item.title}</p>;
-      })}
+            <TableBody>
+              {post.map((index) => {
+                return (
+                  <TableRow>
+                    <TableCell>{index.id}</TableCell>
+                    <TableCell>{index.title}</TableCell>
+                    <TableCell>{index.completed ? "✅" : "❌"}</TableCell>
+                  </TableRow>
+                );
+              })}
+            </TableBody>
+          </Table>
+        </div>
+      </div>
     </>
   );
 }

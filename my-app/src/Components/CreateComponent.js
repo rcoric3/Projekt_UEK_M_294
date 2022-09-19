@@ -11,7 +11,7 @@ function CreateComponent() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          completed: false,
+          completed: true,
           title: titles,
         }),
       });
@@ -21,6 +21,13 @@ function CreateComponent() {
 
     createPost();
   }, []);
+
+  return(
+    <>
+    <div>
+    </div>
+    </>
+  )
 }
 
 export default CreateComponent;

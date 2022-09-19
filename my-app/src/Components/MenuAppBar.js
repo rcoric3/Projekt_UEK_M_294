@@ -53,8 +53,13 @@ export default function MenuAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+            onClick={window.open("http://localhost:3001/CreateComponent")}
+          >
+            Create
           </Typography>
           {auth && (
             <div>
