@@ -15,9 +15,6 @@ export default function BasicTextFields() {
     >
       <div className="BasicTextFields">
         <TextField id="outlined-basic" label="TITEL" variant="outlined" />
-        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
-        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
-        <TextField id="outlined-basic" label="TITEL" variant="outlined" />
       </div>
     </Box>
   );

@@ -12,7 +12,7 @@ function TaskPage() {
         <MenuAppBar />
         <BasicTextFields />
         <SendButton />
-        <FloatingActionButtons />
+        <FloatingActionButtons  />
       </div>
       <p>hallo</p>
     </>

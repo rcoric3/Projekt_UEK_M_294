@@ -1,20 +1,31 @@
 import React, { useState, useEffect } from "react";
 
 function CreateComponent() {
-  const [post, getPost] = useState([]);
   const API = "http://localhost:3000/tasks";
-  const fetchPost = () => {
-    fetch(API)
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        getPost(res);
-      });
-  };
+  const [titles, setTitle] = useState("s767676sdfhkf");
   useEffect(() => {
-    fetchPost();
+    const createPost = () => {
+      let res = fetch(API, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          completed: false,
+          title: titles,
+        }),
+      });
+    };
+
+    console.log("Hello World");
+
+    createPost();
   }, []);
-  return <div>CreateComponent</div>;
+  return (
+    <ul>
+      <p></p>
+    </ul>
+  );
 }
 
 export default CreateComponent;

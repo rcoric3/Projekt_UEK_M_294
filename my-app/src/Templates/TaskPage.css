@@ -5,7 +5,8 @@ body{
     width: 100%;
 }
 p{
- font-size:   30px;
+    background-color: aquamarine;
+    font-size: 30px;
 }
 li{
     font-size: 30px;
