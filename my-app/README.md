@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Login Screen --> "http://localhost:3001"
+Home Screen --> "http://localhost:3001/home"
+Create Screen --> "http://localhost:3001/create"
+Change Screen --> "http://localhost:3001/change"
+
+
+Grund für den Warn im Home file:
+Bei jedem Li sollte ein Unique key gesetzt werden, aber es bei mir nicht, da ich mein li aus einer Ui habe
