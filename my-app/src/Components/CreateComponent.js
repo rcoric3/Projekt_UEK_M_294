@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import BasicTextFields from "./BasicTextFields";
 import SendButton from "./SendButton";
 import "../Templates/CreateComponent.css";
@@ -50,6 +51,6 @@ function CreateComponent() {
       </div>
     </>
   );
-}
+  }
 
 export default CreateComponent;
