@@ -1,0 +1,143 @@
+commit 8eebc909427253080c70baa262da934367e021f4
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 15:37:20 2022 +0200
+
+    last changes
+
+commit 4450f96b9f3a239abba4fd908dfbc655e9b4587b
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 15:35:45 2022 +0200
+
+    Changed README
+
+commit 9f782739501d9b4583e1eeddb15c021d6e4fdb02
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 14:10:52 2022 +0200
+
+    added new login
+
+commit 4b75a24b4467e6de06039286948641e1d785be2a
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 14:10:43 2022 +0200
+
+    deleted
+
+commit e9a1951011af24a3117d1964b55b44ad2cd62ece
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 13:39:54 2022 +0200
+
+    added new files
+
+commit 0c4a4ee1b445dd738c0786d1fa35820e9d969d38
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 13:17:56 2022 +0200
+
+    added Login
+
+commit 75d0b18f0510e35005d85a72513c038421e7ac46
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 13:17:49 2022 +0200
+
+    updated README
+
+commit 604d1ff8d89b5c007db3569fea2f247369441fba
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 12:52:05 2022 +0200
+
+    backend installed
+
+commit 165cedee5e0343c7c845229f7003da1ca3fad4e9
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 12:50:48 2022 +0200
+
+    new backend
+
+commit 9175b3b9d190fa64cdd004f7f25ad04ac0a99862
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 11:41:25 2022 +0200
+
+    basic Content done
+
+commit 9a3d37783034a8e329b4089e6485892d07005ac1
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Tue Sep 20 08:32:47 2022 +0200
+
+    fixed reat function
+
+commit 48cc0b877bc1d8a35302a55d0e4cfd0629753f58
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Mon Sep 19 20:51:03 2022 +0200
+
+    fixed create Task
+
+commit a256e73e9df7cd1b571e1bc78977cd86edc43d3b
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Mon Sep 19 15:15:59 2022 +0200
+
+    new push
+
+commit 728f35d6683652ba83401525f7626689ee2b3a34
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Mon Sep 19 13:44:21 2022 +0200
+
+    new database
+
+commit d3fe44079a0cf912619fbd102dc40cde2a126d15
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Mon Sep 19 13:02:51 2022 +0200
+
+    added new features(add tasks, delete + show tasks
+
+commit 9030b274669ca44dbd237f4a1c1743a6ad067207
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Mon Sep 19 09:14:03 2022 +0200
+
+    added new component
+
+commit 3e4e293e74020f684558ca2a32900b8743d25f6d
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Mon Sep 19 08:41:06 2022 +0200
+
+    added new file
+
+commit 6e31dd9c2ff35193b62a5cffa9d04a1321d4993f
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Wed Sep 14 16:29:30 2022 +0200
+
+    change
+
+commit 317f4ead6ceb3d175e1a44173712afe895030b29
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Wed Sep 14 15:42:46 2022 +0200
+
+    added to the frist page
+
+commit a021a75f7daa53e99a5315a74f143d6d915144ba
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Wed Sep 14 14:36:16 2022 +0200
+
+    added new files
+
+commit a5b812231c615ff1e869a6b85a213c257a46082e
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Wed Sep 14 14:11:46 2022 +0200
+
+    added components
+
+commit 1648d130cf28128d39d8aa1100c1fb46e2df9172
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Wed Sep 14 13:21:17 2022 +0200
+
+    added database
+
+commit 80c20dfbaf37b6055aff848077803f1944e74389
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Wed Sep 14 09:27:45 2022 +0200
+
+    fixed react app
+
+commit a266ce53abba0310495c03e6a13e73d3d40a0799
+Author: rcoric3 <92095914+rcoric3@users.noreply.github.com>
+Date:   Wed Sep 14 09:19:15 2022 +0200
+
+    added react app
