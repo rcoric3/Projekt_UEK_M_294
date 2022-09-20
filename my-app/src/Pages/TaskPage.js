@@ -10,11 +10,7 @@ function TaskPage() {
     <>
       <div className="TaskPage">
         <MenuAppBar />
-        <BasicTextFields />
-        <SendButton />
-        <FloatingActionButtons />
       </div>
-      <p>hallo</p>
     </>
   );
 }

@@ -1,11 +1,14 @@
 body{
     justify-content: center;
+    background-color:white
 }
 .BasicTextFields{
     width: 100%;
 }
 p{
- font-size:   30px;
+    border: solid black 2px;
+    border-radius: 8px;
+    text-align: center;
 }
 li{
     font-size: 30px;

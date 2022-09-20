@@ -11,6 +11,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import { Link } from "react-router-dom";
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
@@ -26,6 +27,12 @@ export default function MenuAppBar() {
 
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const redirectHome = () => {
+    <Link to="/" />;
+  };
+  const redirectCreate = () => {
+    <Link to="/create" />;
   };
 
   return (
@@ -54,7 +61,12 @@ export default function MenuAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Photos
+            <button>
+              <Link to={"/home"}>Home</Link>{" "}
+            </button>
+            <button>
+              <Link to={"/create"}>Create</Link>
+            </button>
           </Typography>
           {auth && (
             <div>
