@@ -37,6 +37,10 @@ Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 ### Change Screen --> ["http://localhost:3001/change"]
 
+Das Test File befindet sich unterhalb:
+GitLog befindet sich im Projekt unter gitlog.txt
+
+
 Grund für den Warn im Home file:
 Bei jedem LI sollte ein Unique key gesetzt werden, aber es geht bei mir nicht, da ich mein LI aus einer UI habe
 
