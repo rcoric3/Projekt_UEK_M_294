@@ -32,7 +32,12 @@ function ChangeData() {
         completed: false,
         title: title,
       }),
-    }).then(alert("succesfuly"));
+    });
+    if (title.trim().length !== 0) {
+      alert("input Value is NOT EMPTY");
+    } else {
+      alert("input value is empty");
+    }
   };
   return (
     <>

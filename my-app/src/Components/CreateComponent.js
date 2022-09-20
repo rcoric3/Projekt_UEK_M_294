@@ -39,6 +39,11 @@ function CreateComponent() {
       .catch((error) => {
         this.setState({ requestFailed: true });
       });
+    if (title.trim().length !== 0) {
+      alert("input Value is NOT EMPTY");
+    } else {
+      alert("input value is empty");
+    }
     console.log("end call api");
   };
   useEffect(() => {}, []);
@@ -51,6 +56,6 @@ function CreateComponent() {
       </div>
     </>
   );
-  }
+}
 
 export default CreateComponent;

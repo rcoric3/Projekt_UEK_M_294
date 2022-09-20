@@ -28,12 +28,6 @@ export default function MenuAppBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const redirectHome = () => {
-    <Link to="/" />;
-  };
-  const redirectCreate = () => {
-    <Link to="/create" />;
-  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -62,7 +56,7 @@ export default function MenuAppBar() {
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <button>
-              <Link to={"/home"}>Home</Link>{" "}
+              <Link to={"/"}>Home</Link>{" "}
             </button>
             <button>
               <Link to={"/create"}>Create</Link>

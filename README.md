@@ -44,15 +44,15 @@ Bei jedem LI sollte ein Unique key gesetzt werden, aber es geht bei mir nicht, d
 
 ### Ablauf
 
-1. Anwendung Aufrufen
+1. Anwendung Aufrufen`ERFÜLLT`
 2. Direkt auf ["http://localhost:3001/home"] springen `ERFÜLLT`
-3. Liste ersichtbar
+3. Liste ersichtbar`ERFÜLLT`
 
 4. Neue Aufgabe erstellen, oben im Menu auf `Create`drücken `ERFÜLLT`
-5. Neue Aufgabe erstellen
+5. Neue Aufgabe erstellen`ERFÜLLT`
 
-6. Aufgabe bearbeiten
+6. Aufgabe bearbeiten`ERFÜLLT`
 7. Auf `Change Icon` drücken `ERFÜLLT`
-8. Aufgabe bearbeiten
+8. Aufgabe bearbeiten`ERFÜLLT`
 
 Mein GitHub Link [https://github.com/rcoric3/Projekt_UEK_M_294]
