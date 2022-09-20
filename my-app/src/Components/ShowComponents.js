@@ -9,31 +9,58 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import EditIcon from "@mui/icons-material/Edit";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormGroup from "@mui/material/FormGroup";
+import MenuItem from "@mui/material/MenuItem";
+import Switch from "@mui/material/Switch";
 import MenuAppBar from "./MenuAppBar";
+import { Link } from "react-router-dom";
 
 function ShowTask(onClick) {
-  const [post, getPost] = useState([]);
+  const [tasks, setTasks] = useState([]);
+  const [title, setTitle] = useState("");
   const API = "http://localhost:3000/tasks";
   const fetchPost = () => {
     fetch(API)
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
-        getPost(res);
+        setTasks(res);
       });
   };
-  const handleClick = (e) => {
-    e.preventDefault();
-    fetch(API)
-      .then((res) => res.json())
-      .then((res) => {
-        console.log(res);
-        getPost(res);
+  const handleClick = (id) => {
+    return (e) => {
+      e.preventDefault();
+      fetch(API)
+        .then((res) => res.json())
+        .then((res) => {
+          setTasks(res);
 
-        for (let i = 0; i < res.length; i++) {
-          console.log(res[i].id);
-        }
-      });
+          const objWithIdIndex = res.findIndex((obj) => obj.id === id);
+          res.splice(tasks, id);
+          const newTask = [...res];
+
+          console.log(tasks);
+          console.log(id);
+          console.log(res);
+          console.log(newTask);
+
+          fetch("http://localhost:3000/task/" + id, {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+        });
+    };
+  };
+
+  const [auth, setAuth] = React.useState(true);
+  const handleChange = (event) => {
+    if (tasks[0].completed === true) {
+      setAuth(event.target.checked);
+    }
+    console.log(tasks[0].completed);
   };
   useEffect(() => {
     fetchPost();
@@ -43,7 +70,7 @@ function ShowTask(onClick) {
     <>
       <MenuAppBar />
       <div className="centerTable">
-        <div className="tableContainer">
+        <div className="tableContainer" id="container">
           <Typography className="showTaskTitle" variant="h5">
             Your Tasks:
           </Typography>
@@ -59,18 +86,31 @@ function ShowTask(onClick) {
             </TableHead>
 
             <TableBody>
-              {post.map((index) => {
+              {tasks.map((index) => {
                 return (
                   <TableRow>
                     <TableCell>{index.id}</TableCell>
                     <TableCell>{index.title}</TableCell>
-                    <TableCell>{index.completed ? "✅" : "❌"}</TableCell>
+                    <TableCell>
+                      {" "}
+                      <FormGroup>
+                        <FormControlLabel
+                          control={
+                            <Switch
+                              checked={auth}
+                              onChange={handleChange}
+                              aria-label="login switch"
+                            />
+                          }
+                          label={auth ? "✅" : "❌"}
+                        />
+                      </FormGroup>
+                    </TableCell>
                     <TableCell>
                       <Button
                         variant="outlined"
                         startIcon={<DeleteIcon />}
-                        id={index.id}
-                        onClick={handleClick}
+                        onClick={handleClick(index.id)}
                       >
                         Delete
                       </Button>
@@ -79,7 +119,9 @@ function ShowTask(onClick) {
                       {" "}
                       <Box sx={{ "& > :not(style)": { m: 1 } }}>
                         <Fab color="secondary" aria-label="edit">
-                          <EditIcon />
+                          <Link to={`change/${index.id}`}>
+                            <EditIcon />
+                          </Link>
                         </Fab>
                       </Box>
                     </TableCell>

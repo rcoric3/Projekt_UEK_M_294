@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BasicTextFields from "./BasicTextFields";
 import SendButton from "./SendButton";
+import "../Templates/CreateComponent.css";
 
 function CreateComponent() {
   const API = "http://localhost:3000/tasks";
@@ -43,8 +44,10 @@ function CreateComponent() {
 
   return (
     <>
-      <BasicTextFields onChange={handleChange} />
-      <SendButton onClick={handleClick} />
+      <div className="createComponent">
+        <BasicTextFields onChange={handleChange} />
+        <SendButton onClick={handleClick} />
+      </div>
     </>
   );
 }
