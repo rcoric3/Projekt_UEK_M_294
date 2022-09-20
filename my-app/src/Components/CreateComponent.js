@@ -17,12 +17,28 @@ function CreateComponent() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        completed: true,
+        completed: false,
         title: title,
       }),
-    });
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          alert("SUCCESSS");
+          return response.json();
+        } else if (response.status === 408) {
+          alert("SOMETHING WENT WRONG");
+          this.setState({ requestFailed: true });
+        }
+      })
+      .then((data) => {
+        this.setState({ isLoading: false, downlines: data.response });
+        alert("DATA STORED");
+      })
+      .catch((error) => {
+        this.setState({ requestFailed: true });
+      });
+    console.log("end call api");
   };
-
   useEffect(() => {}, []);
 
   return (
