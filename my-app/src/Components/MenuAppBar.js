@@ -62,7 +62,7 @@ export default function MenuAppBar() {
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <button>
-              <Link to={"/"}>Home</Link>{" "}
+              <Link to={"/home"}>Home</Link>{" "}
             </button>
             <button>
               <Link to={"/create"}>Create</Link>
