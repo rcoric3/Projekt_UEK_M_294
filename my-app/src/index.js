@@ -18,7 +18,6 @@ root.render(
         <Route path="/create" element={<CreateTask />} />
         <Route path="/home" element={<ShowComponents />} />
         <Route path="change/:id" element={<ChangeData />} />
-        <Route path="/" element={<Auth />} />
       </Routes>
     </Router>
   </>
